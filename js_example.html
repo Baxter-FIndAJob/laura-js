@@ -1,23 +1,66 @@
+<!-- 
+
+Assignment:
+
+- Make an HTML page with three buttons.
+
+- Write CSS to make the buttons look good.
+
+- Write JS with four functions:
+
+Function 1
+- Alert "1"
+
+Function 2
+- Write "2" to the console.
+
+Function 3
+- Alert "3"
+
+Function 4 (Main Program Function)
+- When you click Button 1, run Function 1
+- When your mouse enters Button 2, run Function 2
+- When your mouse leaves Button 3, run Function 3
+!look up using jquery
+.mouseenter()
+Set Function 4 to run when the page loads.
+
+ -->
+
+
 <!DOCTYPE html>
 <html>
 	<head>
 
 		<style>
 
-			#wasclicked {
-				border: solid 1px #ccc;
-				height: 50px;
-				width: 100px;
+			
+			.btn {
+				display: block;
+				background:#d14836;
 				text-align: center;
+				color: white;
+				width: 180px;
+				margin: 20px 0;
+				text-shadow: 0 1px rgba(0,0,0,0.1);
+				font-weight: bold;
+				font-size: 12px;
+				height: 27px;
+				line-height: 27px;
+				padding: 8PX;
+				font-family: arial,sans-serif;
+				text-transform: uppercase;
+				border-radius: 2px;
 			}
 
 		</style>
-
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="js_example.js"></script>
-		
+
 	<head>
 	<body>
-		<div id="wasclicked">I am the button</div>
+		<div id="clickable" class="btn">Clickable Button</div>
+		<div id="enterable" class="btn">Enterable Button</div>
+		<div id="leaveable" class="btn">Leabeable Number 1</div>
 	</body>
 </html>
